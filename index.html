@@ -117,26 +117,44 @@
 
     <section class="container-fluid bg-light">
       <h2>Orçamento</h2>
-      <form >
+      <form method="GET" action="">
         <fieldset>
-          <legend>Dados da viagem</legend>
-          <label>Nome:</label><br>
-          <input type="text" name="nome" placeholder="Nome e sobrenome"><br><br>
+          <legend>Dados da viagem:</legend>
+          <div class="mb-3">
+            <label class="form-label" for="nome">
+              Nome:
+            </label>
+            <input type="text" class="form-control" name="nome" id="nome" placeholder="Nome e sobrenome">
+          </div>
          
-          <label>Senha</label><br>
-          <input type="password" name="senha" placeholder="******"><br><br>
+          
+          <div class="mb-3">
+            <label class="form-label" for="email">Email:</label>
+            <input type="email" class="form-control" name="email" id="email" placeholder="seuemail@dominio.com" required >
+          </div>
+          
+          <div class="mb-3">
+            <label class="form-label" for="senha" pattern="[A-Z]{3}[0-9]{4}"
+            title="A senha deve ter 3 letras maiúsculas e 4 números"
+            >Senha:</label>
+            <input type="password" class="form-control" name="senha" id="senha" placeholder="******">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label" for="dataIda">Data de ida:</label>
+            <input type="date" class="form-control" name="dataIda" id="dataIda">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label" for="dataVolta">Data de volta:</label><br>
+            <input type="date" class="form-control" name="dataVolta" id="dataVolta">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label" for="qtdPessoas">Quantidade de pessoas:</label>
+            <input type="number" class="form-control" name="qtdPessoas" id="qtdPessoas">
+          </div>
   
-          <label>Email:</label><br>
-          <input type="email" required name="email" placeholder="seuemail@dominio.com"><br><br>
-  
-          <label>Data de ida</label><br>
-          <input type="date" name="dataIda"><br><br>
-  
-          <label>Data de volta</label><br>
-          <input type="date" name="dataVolta"><br><br>
-  
-          <label>Quantidade de pessoas</label><br>
-          <input type="number" name="qtdPessoas"><br><br>
         </fieldset>
 
         <fieldset>
@@ -174,9 +192,6 @@
             <option value="10x" selected>10x com juros</option>
           </select>
         </fieldset>
-
-        <label>Comentário</label><br>
-        <textarea rows="5" name="comentario"></textarea><br><br>
 
         <button>Salvar</button>
       </form>
