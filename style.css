@@ -1,24 +1,7 @@
-body {
-    font-weight: 400;
-    font-family: Lato, Helvetica, sans-serif;
-    font-size: 15px;
-    line-height: 2.2em;
-    color: #818181;
-    margin: 0;
-}
-
-header {
-    background-color: #f4511e;
-    padding-bottom: 20px;
-}
-
 header p {
     color: white;
     text-align: center;
-}
-
-section, footer{
-    margin: 40px;
+    font-weight: 600;
 }
 
 h1 {
