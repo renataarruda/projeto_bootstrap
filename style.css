@@ -9,7 +9,12 @@ body {
 
 header {
     background-color: #f4511e;
-    padding: 20px;
+    padding-bottom: 20px;
+}
+
+header p {
+    color: white;
+    text-align: center;
 }
 
 section, footer{
@@ -22,41 +27,15 @@ h1 {
     padding: 15px;
     color: white;
     text-align: center;
+    margin-top: 20px;
 }
 
-header p {
-    color: white;
-    text-align: center;
-}
 
 h2{
     font-size: 24px;
     text-transform: uppercase;
     color:#303030;
     font-weight: 600;
-}
-
-nav li a{
-    padding: 10px;
-    color: white;
-    text-decoration: none;
-}
-
-nav li{
-    float: left;
-}
-
-nav ul {
-    float: right;
-    list-style: none;
-}
-
-nav {
-    font-size: 12px;
-    letter-spacing: 4px;
-    height: 50px;
-    background-color: #f4511e;
-    padding-right: 40px;
 }
 
 table {
