@@ -126,7 +126,6 @@
             </label>
             <input type="text" class="form-control" name="nome" id="nome" placeholder="Nome e sobrenome">
           </div>
-         
           
           <div class="mb-3">
             <label class="form-label" for="email">Email:</label>
@@ -154,28 +153,42 @@
             <label class="form-label" for="qtdPessoas">Quantidade de pessoas:</label>
             <input type="number" class="form-control" name="qtdPessoas" id="qtdPessoas">
           </div>
-  
         </fieldset>
 
         <fieldset>
           <legend>Quais serviços deseja contratar?</legend>
-          <label>
-          <br><input type="checkbox" name="passagens" value="Passagens">Compra de passagens
-          </label>
-          <label>
-          <br><input type="checkbox" name="hospedagem" value="Hospedagem">Reserva de hospedagem
-          </label>
-          <label>
-          <br><input type="checkbox" name="veiculos" value="Veiculo">Aluguel de veículos
-          </label>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" name="passagens" value="Passagens" id="compraPassagem">
+            <label class="form-check-label" for="compraPassagem">
+              Compra de passagens
+            </label>
+          </div>
+
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" name="hospedagem" value="Hospedagem" id="reservaHospedagem">
+            <label class="form-check-label" for="reservaHospedagem">
+              Reserva de hospedagem
+            </label>
+          </div>
+
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" name="veiculos" value="Veiculo" id="aluguelVeiculo">
+            <label class="form-check-label" for="aluguelVeiculo">
+              Aluguel de veículos
+            </label>
+          </div>
         </fieldset>
-        <br><br>
 
         <fieldset>
           <legend>Escolha a forma de pagamento</legend>
-          <label>
-            <br><input type="radio" name="formaPagamento" value="Cartão de crédito">Cartão de crédito
-          </label>
+
+          <div class="form-check">
+            <input type="radio" name="formaPagamento" value="Cartão de crédito">
+            <label>
+              Cartão de crédito
+            </label>
+
+          </div>
           <label>
             <br><input type="radio" name="formaPagamento" value="Boleto">Boleto
           </label>
