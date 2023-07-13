@@ -21,4 +21,14 @@ h2{
     font-weight: 600;
 }
 
+.carousel-caption h5{
+    font-size: 80px;
+    color: #ffc107;
+    text-shadow: 2px 2px 2px black;
+}
+
+.carousel-item img{
+    width: 820px;
+    height: 548px;
+}
 
